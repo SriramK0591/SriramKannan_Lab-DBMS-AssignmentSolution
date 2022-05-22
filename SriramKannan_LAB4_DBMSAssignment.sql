@@ -175,7 +175,11 @@ PRODUCT C ON P.PRO_ID=C.PRO_ID
 WHERE P.ORD_DATE>'2021-10-05'
 
 --8 Display customer name and gender whose names start or end with character 'A'.
+<<<<<<< HEAD
 SELECT DISTINCT CUS_NAME AS CUSTOMER_NAME, CUS_GENDER AS GENDER FROM CUSTOMER WHERE CUS_NAME LIKE 'A%' OR CUS_NAME LIKE '%A'
+=======
+SELECT DISTINCT CUS_NAME, CUS_GENDER FROM CUSTOMER WHERE CUS_NAME LIKE 'A%' OR CUS_NAME LIKE '%A'
+>>>>>>> 70dfc96439db2be3b37626fd4e2f3b83793b1795
 
 --9 Create a stored procedure to display supplier id, name, rating and Type_of_Service. 
 --For Type_of_Service, If rating =5, print “Excellent Service”,
